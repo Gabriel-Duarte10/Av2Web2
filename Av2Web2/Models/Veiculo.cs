@@ -54,6 +54,7 @@ namespace Av2Web2.Models
         public string TXT_Login { get; set; }
 
         public DateTime? DAT_Atualizacao { get; set; }
+        public virtual Empresa Empresa { get; set; }
 
     }
 }

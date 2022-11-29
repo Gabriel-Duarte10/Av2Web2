@@ -23,6 +23,8 @@ namespace Av2Web2.Models
         public virtual DbSet<Tipo_Recebimento> Tipo_Recebimento { get; set; }
         public virtual DbSet<Tipo_Servico> Tipo_Servico { get; set; }
         public virtual DbSet<Veiculo> Veiculo { get; set; }
+        public virtual DbSet<SCD_Grupo> SCD_Grupo { get; set; }
+        public virtual DbSet<SCD_Usuario> SCD_Usuario { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -361,6 +363,25 @@ namespace Av2Web2.Models
             modelBuilder.Entity<Veiculo>()
                 .Property(e => e.TXT_Login)
                 .IsUnicode(false);
+            modelBuilder.Entity<SCD_Grupo>()
+                .Property(e => e.TXT_Nome)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<SCD_Usuario>()
+                .Property(e => e.TXT_Login)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<SCD_Usuario>()
+                .Property(e => e.TXT_Senha)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<SCD_Usuario>()
+                .Property(e => e.TXT_Nome)
+                .IsFixedLength()
+                .IsUnicode(false);
+
         }
     }
 }

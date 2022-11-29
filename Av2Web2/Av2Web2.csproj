@@ -170,6 +170,8 @@
     <Compile Include="Controllers\Funcionario_CertificadosController.cs" />
     <Compile Include="Controllers\Funcionario_Historico_SalarioController.cs" />
     <Compile Include="Controllers\Plano_De_ContaController.cs" />
+    <Compile Include="Controllers\SCD_GrupoController.cs" />
+    <Compile Include="Controllers\SCD_UsuarioController.cs" />
     <Compile Include="Controllers\Tipo_RecebimentoController.cs" />
     <Compile Include="Controllers\Tipo_ServicoController.cs" />
     <Compile Include="Controllers\VeiculoesController.cs" />
@@ -190,6 +192,8 @@
     <Compile Include="Models\Funcionario_Certificados.cs" />
     <Compile Include="Models\Funcionario_Historico_Salario.cs" />
     <Compile Include="Models\Plano_De_Conta.cs" />
+    <Compile Include="Models\SCD_Grupo.cs" />
+    <Compile Include="Models\SCD_Usuario.cs" />
     <Compile Include="Models\Tipo_Recebimento.cs" />
     <Compile Include="Models\Tipo_Servico.cs" />
     <Compile Include="Models\Veiculo.cs" />
