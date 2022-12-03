@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
+﻿using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Net;
-using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
 using Av2Web2.Models;
@@ -19,7 +15,7 @@ namespace Av2Web2.Controllers
         // GET: api/Funcionarios
         public IQueryable<Funcionario> GetFuncionario()
         {
-            return db.Funcionario;
+            return db.Funcionario.OrderBy(func => func.DAT_Atualizacao);
         }
 
         // GET: api/Funcionarios/5
